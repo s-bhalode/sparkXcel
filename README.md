@@ -7,17 +7,6 @@ This library was created to solve the problem of taking a data model from a data
 
 There are similar libraries in other languages (DataMapper, DTO(C#), etc). I could never find a solution that allowed me to quickly and easily utilize a couple of different approaches: *projection*, *translation*, and *merging*.
 
-## Getting Started
-
-### Installation
-
-Installation is simple, use npm to install.  Right now, this is a node targeted project. If I find a good reason to use it on the browser i'll possibly browserify it.
-
-```js
-npm install dto --save
-```
-
-Thats it!
 
 
 ## Projection
