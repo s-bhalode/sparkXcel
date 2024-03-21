@@ -38,16 +38,19 @@ describe('Projection', function() {
       const source = { here: '', is: '', my: 1, thing: null };
       let result = Projection.without(source, ['here', 'my', 'thing']);
       expect(result.is).to.be.empty;
+      console.log(result);
     });
 
     it('should return a naked object', function() {
       const source = { here: '', is: '', my: 1, thing: null };
       expect(Projection.without(source, [])).to.be.eql(source);
+      console.log(expect(Projection.without(source, [])).to.be.eql(source));
     });
 
     it('should return the full object', function() {
       const source = { here: '', is: '', my: 1, thing: null };
       expect(Projection.without(source, ['here', 'is', 'my'])).to.be.eql({ thing: null });
+      // console.log(Projection.without(source, ['here', 'is', 'my'])).to.be.eql({ thing: null });
     });
 
   });

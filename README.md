@@ -9,16 +9,6 @@ There are similar libraries in other languages (DataMapper, DTO(C#), etc). I cou
 
 ## Getting Started
 
-### Installation
-
-Installation is simple, use npm to install.  Right now, this is a node targeted project. If I find a good reason to use it on the browser i'll possibly browserify it.
-
-```js
-npm install dto --save
-```
-
-Thats it!
-
 
 ## Projection
 There are two simple ways to project (like a SQL SELECT statement) or simplify an object. I found myself deleting the properties on the object, or using libraries such as lodash to restrict the output. I decided to use Lazy.js for performance reasons.
@@ -31,10 +21,10 @@ Given an array of property names, the resulting object will only contain the sup
 
 ```js
 let Dto = require('dto');
-let model = { name: { first: 'Tyler', last: 'Garlick'}, age: 33, gender: 'Male'};
+let model = { name: { first: 'Simran', last: 'Bhalode'}, age: 21, gender: 'Female'};
 
 let result = Dto.take.only(model, ['age', 'gender']);
-// result = { age: 33, gender: 'Male' }
+// result = { age: 21, gender: 'Female' }
 ```
 
 ### Without
@@ -45,10 +35,10 @@ Given an array of property names, the resulting object will remove any propertie
 
 ```js
 let Dto = require('dto');
-let model = { name: { first: 'Tyler', last: 'Garlick'}, age: 33, gender: 'Male'};
+let model = { name: { first: 'Simran', last: 'Bhalode'}, age: 21, gender: 'Female'};
 
 let result = Dto.take.without(model, ['name']);
-// result = { age: 33, gender: 'Male' }
+// result = { age: 21, gender: 'Female' }
 ```
 
 
