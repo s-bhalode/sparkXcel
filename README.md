@@ -7,7 +7,10 @@ This library was created to solve the problem of taking a data model from a data
 
 There are similar libraries in other languages (DataMapper, DTO(C#), etc). I could never find a solution that allowed me to quickly and easily utilize a couple of different approaches: *projection*, *translation*, and *merging*.
 
+<<<<<<< HEAD
 ## Getting Started
+=======
+>>>>>>> c942a96555d08bb3d928c8ac9c224daa63886043
 
 
 ## Projection
